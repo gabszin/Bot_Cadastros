@@ -7,18 +7,21 @@ Este projeto é um bot desenvolvido em **Node.js** que automatiza o processo de 
 ## 🚀 Funcionalidades
 
 - 📲 **Integração com WhatsApp**: Recebe mensagens dos usuários e coleta informações necessárias para o cadastro.
-- 📝 **Coleta de Dados**: Solicita e armazena dados como nome completo, e-mail e telefone.
+- 📝 **Coleta de Dados**: Armazena dados como nome completo, e-mail e telefone.
 - 🔄 **Automação de Cadastro**: Utiliza as informações coletadas para realizar o cadastro automático na plataforma Even3.
-- 📧 **Confirmação**: Envia uma mensagem de confirmação ao usuário após o cadastro bem-sucedido.
+- 📧 **Confirmação**: Envia uma mensagem de confirmação ao usuário e um e-mail com o QR-Code de acesso ao cliente após o cadastro bem-sucedido.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- [Node.js](https://nodejs.org/) – Ambiente de execução JavaScript.
-- [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js) – Biblioteca para interação com o WhatsApp Web.
-- [axios](https://axios-http.com/) – Cliente HTTP para envio de requisições à API da Even3.
-- [dotenv](https://www.npmjs.com/package/dotenv) – Gerenciamento de variáveis de ambiente.
+- [Node.js](https://nodejs.org/) – Ambiente de execução JavaScript do lado do servidor.
+- [puppeteer](https://pptr.dev/) – Biblioteca Node.js para automação de navegação em páginas web usando o Chrome ou Chromium.
+- [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js) – Biblioteca para interação com o WhatsApp Web, permitindo enviar e receber mensagens programaticamente.
+- [nodemailer](https://nodemailer.com/) – Biblioteca Node.js para envio de e-mails através de SMTP, com suporte a anexos e personalização de conteúdo HTML.
+- [qrcode-terminal](https://www.npmjs.com/package/qrcode-terminal) – Geração de QR Code no terminal para autenticação do WhatsApp Web.
+- [Gmail SMTP](https://support.google.com/mail/answer/7126229?hl=pt-BR) – Serviço de e-mail do Google utilizado para envio de e-mails com ingressos para participantes.
+
 
 ---
 
