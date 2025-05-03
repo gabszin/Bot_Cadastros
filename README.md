@@ -87,11 +87,4 @@ Bot_Cadastros/
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
 
----
 
-## 👤 Autor
-
-**Gabriel Henrique Braga Saraiva**
-
-- [GitHub](https://github.com/gabszin)
-- [LinkedIn](https://www.linkedin.com/in/gabriel-henrique-braga-saraiva/)
