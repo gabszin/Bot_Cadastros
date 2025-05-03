@@ -53,15 +53,7 @@ Bot_Cadastros/
    npm install
    ```
 
-3. **Configure as variáveis de ambiente:**
-
-   Crie um arquivo `.env` na raiz do projeto com as seguintes informações:
-
-   ```env
-   EVEN3_API_KEY=seu_token_even3
-   ```
-
-4. **Execute o bot:**
+3. **Execute o bot:**
 
    ```bash
    node index.js
@@ -73,17 +65,18 @@ Bot_Cadastros/
 
 ## 🧪 Exemplo de Uso
 
-1. O usuário envia uma mensagem para o número do bot no WhatsApp.
-2. O bot responde solicitando as informações necessárias para o cadastro.
-3. Após receber todas as informações, o bot realiza o cadastro na plataforma Even3.
-4. O usuário recebe uma mensagem de confirmação.
+1. O usuário envia uma mensagem para o número do bot no WhatsApp com o comando "!cad Nome Sobrenome E-mail".
+2. Após receber todas as informações, o bot realiza o cadastro na plataforma Even3 e envia um email com uma mensagem padronizada e o QR-Code de acesso para o cliente do evento.
+3. O usuário recebe uma mensagem de confirmação e o QR-Code de acesso do cliente do evento.
+4. O bot conta com o comando "!comandos" para mostrar as funções e com mensagens de respostas automáticas personalizaveis para recebimento de mensagens que não correspondam a comandos existentes.
 
 ---
 
 ## 📌 Observações
 
 - Certifique-se de que o número de telefone utilizado pelo bot esteja ativo e possa ser autenticado no WhatsApp Web.
-- A API da Even3 deve estar acessível e o token de autenticação deve ser válido.
+- Para utilização correta deve-se estar logado na plataforma da even3 e com o evento já criado dentro da plataforma.
+- Para rodar as ações em segundo plano, deve mudar o campo "headless" para "true"
 
 ---
 
